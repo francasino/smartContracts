@@ -32,5 +32,10 @@ npm install -g ganache-cli
 sudo npm install -g express
 sudo npm install -g truffle 
 
+-------------------------------------------------------------
+
+Install metamask extension on chrome. Log in to get a default account. 
+
+
 
 That's it 
