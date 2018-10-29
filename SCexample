@@ -1,6 +1,6 @@
 We will use an evoting contract. Basically and to make it fast, we will replace the code in our local project.
 
-We will replace the following with the code available in the EvotingCode branch. Each file and code has been commented to understand what it does. Basic-mid programming skills are needed to fully understand it, but just to follow it you dont need big expertise.
+We will replace the following with the code available in the EvotingFiles folder. Each file and code has been commented to understand what it does. Basic-mid programming skills are needed to fully understand it, but just to follow it you dont need big expertise.
 
 
 1. truffle.js (in the main folder of the project. This is just a config file) (this may not be necessary but we will work with port 8545, so just in case)
