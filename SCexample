@@ -34,7 +34,8 @@ There are comments in the code to follow it. It has also a lot of special reserv
 APP.JS and INDEX.HTML
 This are to play with web interface. You will need metamask also. I wont get into details here but you can adapt the code for other SCs. This is additional, is to make it beautiful.
 
-
+METAMASK
+You can add import accounts (using the secret key of the accounts of ganache-cli) and use them to play with the SC. 
 
 Remember, every time that you change the SC, you have to do truffle migrate --reset.   For the test file is not necessary, as well as for the APP and INDEX files
 
