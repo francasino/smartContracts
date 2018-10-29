@@ -5,7 +5,7 @@ After installing all stuff, what we will do always will be:
 1. Open one terminal and start ganache-cli by writing:
 ganache-cli
 1.1 This is an independent terminal that will be always running. Note that ETH is created dynamically each time so we will get a fresh ETH blockchain each time we call it.
-1.2 In chrome, we have to add an account of our local blockchain to interact with it, otherwise is impossible. So, we will copy a secret key of one of the accounts in ganache and we will go to metamask and import a new account using it. Thereafter, we will use that new account for tests. 
+1.2 In chrome, we have to add an account of our local blockchain to interact with it, otherwise is impossible. So, we will copy a secret key of one of the accounts in ganache and we will go to metamask and import a new account using it. We will connect to a custom RPC http://127.0.0.1:8545. Thereafter, we will use that new account for tests. 
 
 2. In another terminal, when we want to deploy a new project for a smart contract we will do the following.
   2.1 Create and empty directory
@@ -29,6 +29,11 @@ Every time we log in the system and want to play with our SCs, basically we will
 
 
 4. About the web interface, we will use basically the index.html and the app.js files that you can find in /src and /js 
+To enable the web interface we will write the following in a terminal 
+npm run dev 
+
+So that our SC is deployed in a web page running several services and listening to ganache-cli. 
+
 
 That's it to understand the framework. So basically the /contracts /migrations and /src folders are relevant. Also the /test folder to play with our SC
 
