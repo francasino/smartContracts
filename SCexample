@@ -1,0 +1,44 @@
+We will use an evoting contract. Basically and to make it fast, we will replace the code in our local project.
+
+We will replace the following with the code available in the EvotingCode branch. Each file and code has been commented to understand what it does. Basic-mid programming skills are needed to fully understand it, but just to follow it you dont need big expertise.
+
+
+1. truffle.js (in the main folder of the project. This is just a config file) (this may not be necessary but we will work with port 8545, so just in case)
+
+2. Election.json  in /contracts  (the SC)
+
+3. 2_deploy_contracts.js in /migrations (brief deployment clues, quite standard)
+
+4. app.js in /src/js  (the js that will provide info from the SC to the index.html and web interface)
+
+5. index.html in /src (the web interface, simple)
+
+
+THE SMART CONTRACT
+
+Basically 2,4 and 5 are the files that we will need to modify more. We can use this skeleton and adapt our SC and the functions easily to create a new SC. 
+
+So, if we take a look at the SC code it has some variables and some functions. We can find structs, mappings and events as the most interesting.
+Structs are like all languages. Mappings are Dicts .... arrays that have a specific pointer (key). They are memory efficient and have other advantages. The event is specific stuff of SCs, we wont get into details
+
+The functions are commented and easy to follow. The require clause is something that stops executing code if "false". So basically we have some reserved words and some kinds of functions (public, private). 
+
+
+THE TEST FILE
+
+It has specific syntax. You can see that are clauses are conditional (then). This is because they only apply assuming than the previous is true. Is like a try/catch clause always. This is how it works, not too much to say.
+When you run it, the "it" helps understanding the outcomes and is easy to follow. Basically tests are done to ensure that SC has no bugs or errors. Think that once deployed, you cant revert it in the blockchain so you have to test it carefully.
+There are comments in the code to follow it. It has also a lot of special reserved words. This, as well as the SC, is something that is better to check in the internet or in the API.
+
+
+APP.JS and INDEX.HTML
+This are to play with web interface. You will need metamask also. I wont get into details here but you can adapt the code for other SCs. This is additional, is to make it beautiful.
+
+
+
+Remember, every time that you change the SC, you have to do truffle migrate --reset.   For the test file is not necessary, as well as for the APP and INDEX files
+
+
+
+
+
