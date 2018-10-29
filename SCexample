@@ -29,6 +29,11 @@ THE TEST FILE
 It has specific syntax. You can see that are clauses are conditional (then). This is because they only apply assuming than the previous is true. Is like a try/catch clause always. This is how it works, not too much to say.
 When you run it, the "it" helps understanding the outcomes and is easy to follow. Basically tests are done to ensure that SC has no bugs or errors. Think that once deployed, you cant revert it in the blockchain so you have to test it carefully.
 There are comments in the code to follow it. It has also a lot of special reserved words. This, as well as the SC, is something that is better to check in the internet or in the API.
+So when in console and testing.
+1. always first step is to assign our contract to a variable 
+2. then do operations on that. mappings need argument (key) to show info. if key is not valid returns some default values.
+3 and web.eth.accounts gives us the list of addressesof our local blockchain (running in ganache). 
+3.1 web.eth.accounts[0]   gives the address 0 
 
 
 APP.JS and INDEX.HTML
