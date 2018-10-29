@@ -1,0 +1,36 @@
+There are seveal stuff that need to be installed but I will make it easy. 
+
+Some comments:
+
+1. This is for Ubuntu 16.04, but will work on other Linux distros without problems, as far as I understand. 
+2. We need to install a local ethereum (ganache-cli), the solidity framework deployment (truffle) and a google chrome extension (metamask) to manage accounts and ETH.
+
+
+This doc is only for installation and some brief comments. In the end, you will have installed all necessary stuff to start playing.
+
+Sublime editor: (highlights syntax solidity)
+
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update
+sudo apt-get install sublime-text
+--------------------------------------------------------------------------
+
+Install node and npm, to play and interact with local ethereum
+
+wget -qO- https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get update
+sudo apt-get install -y nodejs
+sudo apt-get install nodejs-legacy
+sudo apt-get install npm
+
+------------------------------------------------------------
+
+Now we install ganache-cli and truffle
+
+npm install -g ganache-cli
+sudo npm install -g express
+sudo npm install -g truffle 
+
+
+That's it 
