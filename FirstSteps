@@ -11,6 +11,8 @@ ganache-cli
   2.1 Create and empty directory
   2.2 Open a terminal in that directory and write 
     truffle unbox pet-shop
+    If this does not work, simply copy and paste the docs in a new folder manually, there may be problems with ssl certificates. 
+    
   2.3 What this does is to create a new project with all needed files required to deploy the SC and play with it, we dont need to worry about anything else. There is also the option to do "truffle unbox" but adding pet-shop gives us an example with needed files to do a JS web application with few effort.
   2.4 We may open with sublime text the folder of the project by writing "subl ." in terminal. This way we have a general overview.
   2.5 Follow this to install solidity interpreter in sublime, is necessary https://medium.com/coinmonks/ethereum-solidity-language-syntax-in-sublime-1532e6f3646d
